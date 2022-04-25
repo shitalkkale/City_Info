@@ -1,0 +1,9 @@
+<mat-expansion-panel *ngFor="let post of Posts" (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <h1>{{post.title}}</h1>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p style="font-size: 15pt;">{{post.content}}</p>
+  </mat-expansion-panel>
